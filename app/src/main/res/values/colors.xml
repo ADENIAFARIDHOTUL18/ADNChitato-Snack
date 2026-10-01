@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_light">#EAF6D2</color>
+    <color name="green_mid">#B7DE7C</color>
+    <color name="green_dark">#7CB342</color>
+    <color name="purple_dark">#3D1B4A</color>
+    <color name="purple_darker">#2A1033</color>
+    <color name="cream">#FFFDF5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_dark">#2B2B2B</color>
+    <color name="text_muted">#6B6B6B</color>
+    <color name="bar_track">#E4E4E4</color>
+</resources>

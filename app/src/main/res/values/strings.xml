@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ADN-Chitato</string>
+    <string name="btn_my_project">klik disini</string>
+    <string name="snack_name">Chitato</string>
+    <string name="app_title">Chitato Lite\nGurihnya Bikin Nagih!</string>
+    <string name="app_subtitle">Keripik Kentang Renyah, Rasa Meledak di Mulut!</string>
+    <string name="app_footer">Chitato — Cemilan Favorit Sejak Dulu</string>
+
+    <string name="snack_composition">
+        Kentang, Minyak Nabati, Bumbu Perisa (mengandung Penguat Rasa
+        Mononatrium Glutamat, Dinatrium Inosinat, Dinatrium Guanilat), Perisa Sintetik.
+    </string>
+
+    <string name="label_energi">Energi Total</string>
+    <string name="value_energi">90 kkal</string>
+    <string name="label_lemak">Lemak Total</string>
+    <string name="value_lemak">5g</string>
+    <string name="label_karbo">Karbohidrat Total</string>
+    <string name="value_karbo">10g</string>
+    <string name="label_natrium">Natrium</string>
+    <string name="value_natrium">105mg</string>
+</resources>
