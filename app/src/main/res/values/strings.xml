@@ -11,7 +11,20 @@
         Kentang, Minyak Nabati, Bumbu Perisa (mengandung Penguat Rasa
         Mononatrium Glutamat, Dinatrium Inosinat, Dinatrium Guanilat), Perisa Sintetik.
     </string>
-
+    <string name="splash_title">ADN Chitato</string>
+    <string name="login_title">Login</string>
+    <string name="hint_username">👤  Username</string>
+    <string name="hint_password">🔒  Password</string>
+    <string name="btn_login">Masuk</string>
+    <string name="error_login">Username atau password salah</string>
+    <string name="error_empty">Username dan password wajib diisi</string>
+    <string name="btn_logout">Logout</string>
+    <string name="btn_profile">Profil Developer</string>
+    <string name="profile_name">Adenia Faridhotul Musthofa</string>
+    <string name="profile_class">3 TI F</string>
+    <string name="profile_hobby">🍳 Memasak dan 💄 Make up</string>
+    <string name="profile_social">Instagram: @deenia_a</string>
+    <string name="profile_strength">Kekuatan terbesar: Teliti dan konsisten belajar hal baru</string>
     <string name="label_energi">Energi Total</string>
     <string name="value_energi">90 kkal</string>
     <string name="label_lemak">Lemak Total</string>
@@ -20,4 +33,12 @@
     <string name="value_karbo">10g</string>
     <string name="label_natrium">Natrium</string>
     <string name="value_natrium">105mg</string>
+    <string name="splash_subtitle">Kenali snack favoritmu</string>
+    <string name="splash_loading">Memuat…</string>
+    <string name="splash_tagline">🍟 Keripik kentang favoritmu, dalam satu genggaman</string>
+    <string name="splash_badge">🔥 Snack favorit</string>
+    <string name="splash_headline">Rasa yang\nBikin nagih.</string>
+    <string name="splash_tagline_new">Keripik kentang renyah.\nGurih di setiap gigitan.</string>
+    <string name="login_subtitle">Masuk untuk lanjut jajan 🍟</string>
+
 </resources>

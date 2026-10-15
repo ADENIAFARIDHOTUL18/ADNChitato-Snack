@@ -10,4 +10,16 @@
     <color name="text_dark">#2B2B2B</color>
     <color name="text_muted">#6B6B6B</color>
     <color name="bar_track">#E4E4E4</color>
+    <color name="input_bg">#F5F5F5</color>
+    <color name="pink_soft">#F6DCE3</color>
+    <color name="pink_dark">#C2567B</color>
+    <color name="green_deep">#1F3D0F</color>
+    <color name="green_pale_text">#D9ECC4</color>
+    <color name="white_overlay">#33FFFFFF</color>
+    <color name="matcha_cream">#F2EEBF</color>
+    <color name="matcha_leaf">#E3E0A2</color>
+    <color name="matcha_green">#4C7A2A</color>
+    <color name="matcha_green_dark">#3A6420</color>
+    <color name="matcha_hint">#8A9A6B</color>
+    <color name="matcha_error">#C0392B</color>
 </resources>

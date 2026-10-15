@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/matcha_cream">
+
+    <!-- Motif daun di background -->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_pattern_leaves"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Semak hijau di bawah -->
+    <ImageView
+        android:id="@+id/ivBush"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_bush"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Gambar snack (lebih kecil) -->
+    <ImageView
+        android:id="@+id/ivSplashSnack"
+        android:layout_width="190dp"
+        android:layout_height="240dp"
+        android:contentDescription="Chitato"
+        android:rotation="-6"
+        android:scaleType="fitCenter"
+        android:src="@drawable/chitato"
+        app:layout_constraintBottom_toTopOf="@id/tvHeadline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <!-- Headline -->
+    <TextView
+        android:id="@+id/tvHeadline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/chewy"
+        android:gravity="center"
+        android:lineSpacingMultiplier="0.95"
+        android:text="@string/splash_headline"
+        android:textColor="@color/matcha_green"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/tvTaglineNew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivSplashSnack" />
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/tvTaglineNew"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="center"
+        android:letterSpacing="0.08"
+        android:lineSpacingMultiplier="1.2"
+        android:text="@string/splash_tagline_new"
+        android:textAllCaps="true"
+        android:textColor="@color/matcha_green_dark"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/ivBush"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHeadline" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

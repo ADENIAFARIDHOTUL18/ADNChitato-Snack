@@ -21,8 +21,20 @@ class MainActivity : AppCompatActivity() {
 
         val btnMyProject = findViewById<Button>(R.id.btnMyProject)
         btnMyProject.setOnClickListener {
-            val intent = Intent(this, SnackDetailActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, SnackDetailActivity::class.java))
+        }
+
+        val btnProfile = findViewById<Button>(R.id.btnProfile)
+        btnProfile.setOnClickListener {
+            startActivity(Intent(this, ProfileDeveloperActivity::class.java))
+        }
+
+        val btnLogout = findViewById<Button>(R.id.btnLogout)
+        btnLogout.setOnClickListener {
+            val session = SessionManager(this)
+            session.logout()
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
         }
     }
 }

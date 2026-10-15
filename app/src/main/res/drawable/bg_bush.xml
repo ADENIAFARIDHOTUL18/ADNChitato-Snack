@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="170dp"
+    android:viewportWidth="360"
+    android:viewportHeight="170">
+
+    <!-- lapisan belakang (lebih terang) -->
+    <path android:fillColor="#6A9B3C"
+        android:pathData="M0,170 L0,90 C20,60 40,70 55,85 C70,40 100,45 115,75 C135,35 175,35 190,70 C210,40 245,40 260,75 C280,45 320,50 335,85 C345,70 355,72 360,80 L360,170 Z" />
+
+    <!-- lapisan depan (lebih gelap) -->
+    <path android:fillColor="@color/matcha_green"
+        android:pathData="M0,170 L0,115 C15,95 35,100 45,115 C60,85 90,85 105,110 C125,80 160,80 175,105 C195,80 230,78 245,105 C265,85 295,85 310,110 C325,95 345,100 360,115 L360,170 Z" />
+
+    <!-- tonjolan kecil biar kelihatan seperti daun -->
+    <path android:fillColor="@color/matcha_green"
+        android:pathData="M30,100 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0 M120,92 a12,12 0 1,0 24,0 a12,12 0 1,0 -24,0 M215,90 a12,12 0 1,0 24,0 a12,12 0 1,0 -24,0 M300,98 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0" />
+</vector>

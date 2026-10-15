@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="800dp"
+    android:viewportWidth="360"
+    android:viewportHeight="800">
+
+    <group android:translateX="50" android:translateY="70" android:rotation="25">
+        <path android:fillColor="@color/matcha_leaf"
+            android:pathData="M0,-14 C10,-9 10,9 0,14 C-10,9 -10,-9 0,-14 Z" />
+    </group>
+    <group android:translateX="290" android:translateY="110" android:rotation="-30">
+        <path android:fillColor="@color/matcha_leaf"
+            android:pathData="M0,-14 C10,-9 10,9 0,14 C-10,9 -10,-9 0,-14 Z" />
+    </group>
+    <group android:translateX="170" android:translateY="40" android:rotation="60">
+        <path android:fillColor="@color/matcha_leaf"
+            android:pathData="M0,-10 C7,-6 7,6 0,10 C-7,6 -7,-6 0,-10 Z" />
+    </group>
+    <group android:translateX="320" android:translateY="260" android:rotation="15">
+        <path android:fillColor="@color/matcha_leaf"
+            android:pathData="M0,-14 C10,-9 10,9 0,14 C-10,9 -10,-9 0,-14 Z" />
+    </group>
+    <group android:translateX="30" android:translateY="230" android:rotation="-45">
+        <path android:fillColor="@color/matcha_leaf"
+            android:pathData="M0,-12 C9,-8 9,8 0,12 C-9,8 -9,-8 0,-12 Z" />
+    </group>
+    <group android:translateX="95" android:translateY="150" android:rotation="80">
+        <path android:fillColor="@color/matcha_leaf"
+            android:pathData="M0,-9 C6,-6 6,6 0,9 C-6,6 -6,-6 0,-9 Z" />
+    </group>
+    <group android:translateX="250" android:translateY="190" android:rotation="-70">
+        <path android:fillColor="@color/matcha_leaf"
+            android:pathData="M0,-9 C6,-6 6,6 0,9 C-6,6 -6,-6 0,-9 Z" />
+    </group>
+    <group android:translateX="60" android:translateY="400" android:rotation="35">
+        <path android:fillColor="@color/matcha_leaf"
+            android:pathData="M0,-14 C10,-9 10,9 0,14 C-10,9 -10,-9 0,-14 Z" />
+    </group>
+    <group android:translateX="315" android:translateY="430" android:rotation="-20">
+        <path android:fillColor="@color/matcha_leaf"
+            android:pathData="M0,-12 C9,-8 9,8 0,12 C-9,8 -9,-8 0,-12 Z" />
+    </group>
+    <group android:translateX="20" android:translateY="560" android:rotation="70">
+        <path android:fillColor="@color/matcha_leaf"
+            android:pathData="M0,-10 C7,-6 7,6 0,10 C-7,6 -7,-6 0,-10 Z" />
+    </group>
+    <group android:translateX="335" android:translateY="590" android:rotation="-55">
+        <path android:fillColor="@color/matcha_leaf"
+            android:pathData="M0,-10 C7,-6 7,6 0,10 C-7,6 -7,-6 0,-10 Z" />
+    </group>
+    <group android:translateX="130" android:translateY="330" android:rotation="10">
+        <path android:fillColor="@color/matcha_leaf"
+            android:pathData="M0,-8 C5,-5 5,5 0,8 C-5,5 -5,-5 0,-8 Z" />
+    </group>
+</vector>

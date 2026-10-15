@@ -5,44 +5,50 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_gradient"
+    android:background="@color/matcha_cream"
     tools:context=".SnackDetailActivity">
 
-    <TextView
-        android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="16dp"
-        android:padding="8dp"
-        android:text="←"
-        android:textColor="@color/text_dark"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
+    <!-- Motif daun -->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_pattern_leaves"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Semak bawah -->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_bush"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/tvSnackName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="@font/chewy"
-        android:gravity="center"
-        android:text="@string/snack_name"
-        android:textColor="@color/text_dark"
-        android:textSize="22sp"
-        app:layout_constraintTop_toTopOf="@id/btnBack"
-        app:layout_constraintBottom_toBottomOf="@id/btnBack"
-        app:layout_constraintStart_toEndOf="@id/btnBack"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/matcha_green"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back"
+        app:navigationIconTint="@color/white"
+        app:title="Chitato"
+        app:titleCentered="true"
+        app:titleTextColor="@color/white" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/btnBack"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,29 +56,30 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Card gambar -->
+            <!-- Kartu gambar -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/bg_card"
+                android:background="@drawable/bg_card_login"
                 android:elevation="6dp"
                 android:gravity="center"
+                android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
-                    android:id="@+id/ivSnack"
-                    android:layout_width="180dp"
-                    android:layout_height="220dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="Foto Chitato"
                     android:scaleType="centerInside"
                     android:src="@drawable/chitato" />
             </LinearLayout>
 
-            <!-- Card komposisi & gizi -->
+            <!-- Kartu komposisi & gizi -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_card"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_card_login"
                 android:elevation="6dp"
                 android:orientation="vertical"
                 android:padding="20dp">
@@ -82,150 +89,175 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/chewy"
                     android:text="🌿 Komposisi &amp; Info Gizi"
-                    android:textColor="@color/green_dark"
-                    android:textSize="17sp" />
+                    android:textColor="@color/matcha_green"
+                    android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/tvComposition"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="3dp"
+                    android:text="Kentang, Minyak Nabati, Bumbu Perisa (mengandung Penguat Rasa Mononatrium Glutamat, Dinatrium Inosinat, Dinatrium Guanilat), Perisa Sintetik."
+                    android:textColor="@color/matcha_green_dark"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginBottom="16dp"
-                    android:lineSpacingExtra="4dp"
-                    android:text="@string/snack_composition"
-                    android:textColor="@color/text_muted"
-                    android:textSize="13sp" />
+                    android:background="@color/matcha_leaf" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="12dp"
                     android:fontFamily="@font/chewy"
                     android:text="📊 Informasi Nilai Gizi"
-                    android:textColor="@color/text_dark"
+                    android:textColor="@color/matcha_green"
                     android:textSize="16sp" />
 
                 <!-- Energi -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
                     android:orientation="horizontal">
-
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/label_energi"
-                        android:textColor="@color/text_dark" />
-
+                        android:text="Energi Total"
+                        android:textColor="@color/matcha_green_dark"
+                        android:textSize="13sp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/value_energi"
-                        android:textColor="@color/text_muted" />
+                        android:text="90 kkal"
+                        android:textColor="@color/matcha_green_dark"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
-
                 <ProgressBar
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="match_parent"
                     android:layout_height="8dp"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="14dp"
                     android:max="10"
                     android:progress="1"
-                    android:progressDrawable="@drawable/progress_bar_bg" />
+                    android:progressDrawable="@drawable/progress_bar_matcha" />
 
                 <!-- Lemak -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
                     android:orientation="horizontal">
-
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/label_lemak"
-                        android:textColor="@color/text_dark" />
-
+                        android:text="Lemak Total"
+                        android:textColor="@color/matcha_green_dark"
+                        android:textSize="13sp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/value_lemak"
-                        android:textColor="@color/text_muted" />
+                        android:text="5g"
+                        android:textColor="@color/matcha_green_dark"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
-
                 <ProgressBar
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="match_parent"
                     android:layout_height="8dp"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="14dp"
                     android:max="10"
                     android:progress="5"
-                    android:progressDrawable="@drawable/progress_bar_bg" />
+                    android:progressDrawable="@drawable/progress_bar_matcha" />
 
                 <!-- Karbohidrat -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
                     android:orientation="horizontal">
-
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/label_karbo"
-                        android:textColor="@color/text_dark" />
-
+                        android:text="Karbohidrat Total"
+                        android:textColor="@color/matcha_green_dark"
+                        android:textSize="13sp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/value_karbo"
-                        android:textColor="@color/text_muted" />
+                        android:text="10g"
+                        android:textColor="@color/matcha_green_dark"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
-
                 <ProgressBar
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="match_parent"
                     android:layout_height="8dp"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="14dp"
                     android:max="10"
                     android:progress="3"
-                    android:progressDrawable="@drawable/progress_bar_bg" />
+                    android:progressDrawable="@drawable/progress_bar_matcha" />
 
                 <!-- Natrium -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
                     android:orientation="horizontal">
-
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/label_natrium"
-                        android:textColor="@color/text_dark" />
-
+                        android:text="Natrium"
+                        android:textColor="@color/matcha_green_dark"
+                        android:textSize="13sp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/value_natrium"
-                        android:textColor="@color/text_muted" />
+                        android:text="105mg"
+                        android:textColor="@color/matcha_green_dark"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
-
                 <ProgressBar
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="match_parent"
                     android:layout_height="8dp"
+                    android:layout_marginTop="6dp"
                     android:max="10"
                     android:progress="4"
-                    android:progressDrawable="@drawable/progress_bar_bg" />
-
+                    android:progressDrawable="@drawable/progress_bar_matcha" />
             </LinearLayout>
+
+            <!-- Tombol web -->
+            <Button
+                android:id="@+id/btnWebInfo"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_button_matcha"
+                android:backgroundTint="@null"
+                android:elevation="4dp"
+                android:fontFamily="@font/chewy"
+                android:text="Kunjungi Web Chitato"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@null" />
+
+            <!-- ruang supaya tombol tidak tertutup semak -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
