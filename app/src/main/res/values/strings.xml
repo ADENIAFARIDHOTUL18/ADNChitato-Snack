@@ -40,5 +40,8 @@
     <string name="splash_headline">Rasa yang\nBikin nagih.</string>
     <string name="splash_tagline_new">Keripik kentang renyah.\nGurih di setiap gigitan.</string>
     <string name="login_subtitle">Masuk untuk lanjut jajan 🍟</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_detail">Snack</string>
+    <string name="nav_profile">Profil</string>
 
 </resources>

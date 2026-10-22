@@ -1,12 +1,12 @@
 package com.example.adn_chitato
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,22 +19,30 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val btnMyProject = findViewById<Button>(R.id.btnMyProject)
-        btnMyProject.setOnClickListener {
-            startActivity(Intent(this, SnackDetailActivity::class.java))
+        val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
+        bottomNav.setOnItemSelectedListener { item ->
+            val fragment: Fragment? = when (item.itemId) {
+                R.id.nav_home -> HomeFragment()
+                R.id.nav_snack -> SnackFragment()
+                R.id.nav_profile -> ProfileFragment()
+                else -> null
+            }
+            if (fragment != null) {
+                loadFragment(fragment)
+                true
+            } else {
+                false
+            }
         }
 
-        val btnProfile = findViewById<Button>(R.id.btnProfile)
-        btnProfile.setOnClickListener {
-            startActivity(Intent(this, ProfileDeveloperActivity::class.java))
+        if (savedInstanceState == null) {
+            loadFragment(HomeFragment())
         }
+    }
 
-        val btnLogout = findViewById<Button>(R.id.btnLogout)
-        btnLogout.setOnClickListener {
-            val session = SessionManager(this)
-            session.logout()
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish()
-        }
+    private fun loadFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainer, fragment)
+            .commit()
     }
 }
